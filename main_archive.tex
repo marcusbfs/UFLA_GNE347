@@ -11,7 +11,7 @@
 \usepackage{graphicx}            % para inserção de gráficos
 \usepackage{listings}            % para inserção de código
 \usepackage{fancyvrb}            % para inserção de saídas de comandos
-%\usepackage{enumerate}           % para personalizar lista enumeradas 
+%\usepackage{enumerate}           % para personalizar lista enumeradas
 											%(incluso na classe)
 \usepackage{longtable}           % para tambelas muito grandes NOVO!!!!
 
@@ -43,22 +43,23 @@
 ]{hyperref} % para referência cruzadas
 %\usepackage{hyperref}            % para referência cruzadas
 % \usepackage{subfigure}           % figuras dentro de figuras
-\usepackage{caption}            % remodelando o formato dos títulos de 
+\usepackage{caption}            % remodelando o formato dos títulos de
 \usepackage{subcaption}            % entra em conflito com subfigure
 
-% configuração padrão do listings   
+% configuração padrão do listings
 \lstset{%
    language=Java,
    extendedchars=true,
    tabsize=3,
    basicstyle=\footnotesize\ttfamily,
    stringstyle=\em,
-   showstringspaces=false 
+   showstringspaces=false
 }
 
 %abnt-emphasize=bf coloca o título das bibliografias em negrito
 %abnt-thesis-year=both
-\usepackage[alf,num,abnt-etal-cite=3,abnt-etal-list=0,abnt-url-package=url,abnt-emphasize=bf]{abntex2cite}
+% \usepackage[alf,num,abnt-etal-cite=3,abnt-etal-list=0,abnt-url-package=url,abnt-emphasize=bf]{abntex2cite}
+\usepackage[alf,abnt-etal-cite=3,abnt-etal-list=0,abnt-url-package=url,abnt-emphasize=bf]{abntex2cite}
 
 % redefinindo formatação de títulos de tabelas e figuras
 
@@ -77,7 +78,7 @@
 
 % Especificando hifenizações que por ventura LaTeX não saiba fazer
 % Por padrão 99,9% dos termos em português devem ser hifenizados corretamente.
-\hyphenation{hardware software Li-nux am-bien-te diag-nos-ti-car coor-de-na-ção 
+\hyphenation{hardware software Li-nux am-bien-te diag-nos-ti-car coor-de-na-ção
   FAE-PE Recovery TelEduc Williams UFLA Sérgio Renata Reynolds disciplina Iara
 Hernandez Rodrigues}
 
@@ -100,9 +101,9 @@ Hernandez Rodrigues}
 \date{2018}
 \newcommand{\orient}{Professora Zuy Maria Magriotis}
 \newcommand{\disciplina}{GNE347}
-\tipo{Pŕe-projeto entregue e apresentado à \orient{} como requisito da disciplina \disciplina{}.}
+\tipo{Pré-projeto entregue e apresentado à \orient{} como requisito da disciplina \disciplina{}.}
 \orientador{\orient}
-\newcommand{\otipo}{Pŕe-projeto entregue e apresentado à \orient{} como requisito da disciplina \disciplina{}.}
+\newcommand{\otipo}{Pré-projeto entregue e apresentado à \orient{} como requisito da disciplina \disciplina{}.}
 \newcommand{\olocal}{Lavras -- MG}
 \local{Lavras -- MG}
 
@@ -117,7 +118,7 @@ Hernandez Rodrigues}
     \vspace{1cm}
 
     \Large\theauthor
-    
+
     \vspace{\stretch{1}}
 
     \bfseries\LARGE\MakeUppercase\thetitle
@@ -143,7 +144,7 @@ Hernandez Rodrigues}
             \textbf{\MakeUppercase\thetitle}
 
             \vspace{\stretch{1}}
-            
+
             \hfill\begin{minipage}{8cm}{\otipo}\end{minipage} % tipo da monografia
 
             \vspace{\stretch{.58}}
@@ -154,9 +155,9 @@ Hernandez Rodrigues}
              Orientadora
             }
 
-            \vspace{\stretch{.86}} 
+            \vspace{\stretch{.86}}
 
-            \textbf{\MakeUppercase\olocal}\\ 
+            \textbf{\MakeUppercase\olocal}\\
             \textbf{\MakeUppercase\thedate}
             \end{center}
     \end{titlepage}
@@ -200,22 +201,19 @@ Hernandez Rodrigues}
 %==============================================================================
 % incluindo os capitulos
 
-
 \include{capitulos/introducao}
-\include{capitulos/motivacao}
+\include{capitulos/objetivos}
 \include{capitulos/descricao}
-\include{capitulos/procedimento}
-\include{capitulos/resultados}
-\include{capitulos/conclusao}
+\include{capitulos/metas}
 
 %==============================================================================
 
 % Incluindo bibliografia
 %\bibliographystyle{plain}             % estilo para labels em numeros
 %\bibliographystyle{alpha}             % estilo para labels em iniciais
-\bibliographystyle{abntex2-num}         %% estilo para referências usando ABNT, 
+\bibliographystyle{abntex2-num}         %% estilo para referências usando ABNT,
  %para usar o abntex2-alf precisa arrumar o nome dos autores na bibliografia
-%\bibliographystyle{abntex2-alf}           % estilo para referências usando ABNT, 
+%\bibliographystyle{abntex2-alf}           % estilo para referências usando ABNT,
 
 %inclui Referências Bibliográficas
 \referencias
